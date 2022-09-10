@@ -77,6 +77,7 @@ input{
     border: 1px solid var(--color-divisoria);
     border-radius: 8px;
 
+    padding: 0 10px;
     margin-bottom: 15px;
 
     height: 55px;
@@ -162,6 +163,10 @@ button[type="submit"]{
     margin-top: 64px;
 }
 
+button:hover{
+    background: #9e4d43;
+}
+
 .inputGroup-Wrapper, .inputGroup-Wrapper>.horario{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,22 +182,44 @@ input[name="NomeMentor"]{
     width: 50%;
 }
 input[type="checkbox"]{
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    border: 1px solid #E6E6F0;
-    border-radius: 8px;
-    vertical-align: middle;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top:0px;
+    left: 0px;
+    opacity: 0;
 
 }
 .input-WrapperCheck{
     display: flex;
+    position: relative;
     flex-direction: row;
-    gap: 8px;
+    margin-bottom: 8px;
     align-items: center;
 }
 label[for="duvidasOk"]{
-    position: relative;
-    top:-6px;
+    display: flex;
+    gap:16px;
+    margin: 0px;
     /* Não consegui pensar em algo Melhor */
+}
+label[for="duvidasOk"]::before{
+    margin-bottom: 0px;
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--color-divisoria);
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.input-WrapperCheck input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+.input-WrapperCheck input:focus + label::before{
+    border: 2px solid var(--color-title);
+}
+input:invalid{
+    border: 1px solid var(--color-spot);
 }
