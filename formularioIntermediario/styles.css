@@ -1,0 +1,184 @@
+:root{
+    --color-Dark: #535971;
+    --color-Focus: #FF5374;
+    --color-light: #EFEFEF;
+
+    --color-lightInput: #E6E6F0;
+
+    --color-fontLight: white;
+    --color-fontDark: #4E4958;
+
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+
+}
+h1{
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 18px;
+}
+h2{
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+h3{
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+hr{
+    border-top:1px solid var(--color-lightInput);
+    margin-bottom: 20px;
+}
+body{
+    background-color: var(--color-light);
+    color: var(--color-fontLight);
+}
+
+body::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color-Dark);
+    width: 100%;
+    height: 436px;
+
+}
+header{
+    margin-top: 140px;
+
+    display: inline-block;
+    width: 417px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.page{
+    width: 750px ;
+    margin: auto;
+}
+
+main{
+    margin-top: 58px;
+    padding: 64px;
+    background-color: var(--color-fontLight);
+    border-radius: 20px 20px 0px 0px;
+    min-height: 400px;
+    
+    color: var(--color-Dark);
+
+}
+input{
+
+    -webkit-appearance:none;
+    background:#FAFAFC;
+
+    height: 56px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.inputWrapper label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.formNome-SobreNome{
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+}
+.inputWrapper, .inputWrapper input{
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin: 8px 9px;
+    
+    color: #C1BCCC;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+span:hover{
+    color: #74717b;
+}
+
+.formNome-DataMentoria{
+    display: flex;
+    margin-top: 0px;
+    gap: 32px;
+    justify-content: space-between;
+}
+.formNome-DataMentoria .inputWrapper input[type="time"]{
+    appearance: unset;
+    width: 140px;
+}
+.horarios{
+    display: flex;
+    gap: 10px;
+}
+
+.submitArea{
+    background-color: var(--color-Dark);
+    position: relative;
+    width: 750px;
+    height: 160px;
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    margin-bottom: 350px;
+}
+.submitArea button{
+    background-color: var(--color-Focus); 
+    width: 600px;
+    height: 55px;
+    border: 0px;
+    border-radius: 20px;
+
+    font-family: 'Staatliches', cursive;
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px; 
+}
+
+
+

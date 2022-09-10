@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Staatliches&display=swap" rel="stylesheet">    
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Stage 03 - Formulário intermediário</title>
+</head>
+<body>
+
+    <header>
+        <h1>Avalie a Sua Mentoria</h1>
+        Chegou a hora de avaliar o seu mentor. Bora lá?
+        <br>
+        <img src="./assets/tellMeMoreLogo.png" alt="Imagem ilustrativa de pensamento.">
+        <div class="infPessoais">
+            <h2>Informações Pessoais</h2>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <div class="inputGroup-Wrapper">
+                <div class="input-Wrapper">
+                    <div class="label-Wrapper">
+                        <label for="Nome">Nome</label>
+                        <span class="subLabel"></span>
+                    </div>
+                    <input type="text" name="Nome" id="Nome">
+                </div>
+                <div class="input-Wrapper">
+                    <div class="label-Wrapper">
+                        <label for="Sobrenome">Sobrenome</label>
+                        <span class="subLabel"></span>
+                    </div>
+                    <input type="text" name="Sobrenome" id="Sobrenome">
+                </div>
+            </div>
+            <div class="input-Wrapper">
+                <div class="label-Wrapper">
+                    <label for="Email">Email</label>
+                    <span class="subLabel">( Digite um E-Mail Válido)</span>
+                </div>
+                <input type="text" name="Email" id="Email">
+            </div>
+
+            <h3>Informações Do Mentor</h3>
+            <div class="divisoria"></div>
+
+            <div class="input-Wrapper">
+                <div class="label-Wrapper">
+                    <label for="NomeMentor">Selecione quem foi o seu mentor</label>
+                    <span class="subLabel"></span>
+                </div>
+                <input type="text" name="NomeMentor" id="NomeMentor">
+            </div>
+
+            <div class="input-Wrapper">
+                <div class="label-Wrapper">
+                    <label for="FeedBack">Feedback Sobre o Mentro</label>
+                    <span class="subLabel"></span>
+                </div>
+                <textarea type="text" name="FeedBack" id="FeedBack" rows="8"></textarea>
+            </div>
+            <div class="input-WrapperCheck">
+                <input name="duvidasOk" id="duvidasOk"  type="checkbox" >
+                <label for="duvidasOk">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+
+            <h3>Agendando Próxima Mentoria</h3>
+            <div class="divisoria"></div>
+
+            <div class="inputGroup-Wrapper">
+                <div class="input-Wrapper">
+                    <div class="label-Wrapper">
+                        <label for="Data">Data</label>
+                        <span class="subLabel">(DD/MM/AAAA)</span>
+                    </div>
+                    <input type="text" name="Data" id="Data">
+                </div>
+                <div class="horario">
+                    <div class="input-Wrapper">
+                        <div class="label-Wrapper">
+                            <label for="Das">Das</label>
+                            <span class="subLabel"></span>
+                        </div>
+                        <input type="number" name="Das" id="Das">
+                    </div>
+                    <div class="input-Wrapper">
+                        <div class="label-Wrapper">
+                            <label for="Ate">Ate</label>
+                            <span class="subLabel"></span>
+                        </div>
+                        <input type="number" name="Ate" id="Ate">
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit">Salvar</button>
+        </form>
+    </main>
+    
+</body>
+</html>

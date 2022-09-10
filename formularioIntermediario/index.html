@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Staatliches&display=swap" rel="stylesheet">    
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stage 03 - Formulário intermediário</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            Preencha o formulário abaixo para agendar a sua mentoria
+        </header>
+        <main>
+            <form action="post" id="formulario1">
+                <div class="form-wrapper">
+                    <h2>Informações pessoais</h2>
+                    <hr>
+                    <div class="formNome-SobreNome">
+                        <div class="inputWrapper">
+                            <label for="Nome">Nome</label>
+                            <br>
+                            <input type="text" id="Nome">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="Sobrenome">Sobrenome</label>
+                            <br>
+                            <input type="text" id="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="labelWrapper">
+                        <label for="Email">Email</label>
+                        <span>(Digite um E-mail Valido)</span>
+                    </div>
+                    <input type="mail" id="Email">
+                    
+                    <div class="labelWrapper">
+                        <label for="Password">Senha</label>
+                        <span>(Minimo 6 Caracteres)</span>
+                    </div>
+                    <input type="password" id="Password">
+                </div>
+                <div class="form-wrapper">
+                    <h2>Informações do mentor</h2>
+                    <hr>
+                    <div class="labelWrapper">
+                        <label for="mentor">Nome do seu mentor</label>
+                        <span>(So primeiro Nome)</span>
+                    </div>
+                    <input type="text" id="mentor">
+                </div>
+                <div class="form-wrapper">
+                    <h2>Seus horários disponíveis</h2>
+                    <hr>
+                    <h3>Primeira Mentoria</h3>
+                    <div class="formNome-DataMentoria">
+                        <div class="inputWrapper">
+                            <label for="data">Data</label>
+                            <span>(DD/MM/AAAA)</span>
+                            <br>
+                            <input type="number" id="data">
+                        </div>
+                        <div class="horarios">
+                            <div class="inputWrapper">
+                                <label for="das">Das</label>
+                                <br>
+                                <input type="number" id="das">
+                            </div>
+                            <div class="inputWrapper">
+                                <label for="ate">Até</label>
+                                <br>
+                                <input type="number" id="ate">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h3>Segunda Mentoria</h3>
+                    <div class="formNome-DataMentoria">
+                        <div class="inputWrapper">
+                            <label for="data">Data</label>
+                            <span>(DD/MM/AAAA)</span>
+                            <br>
+                            <input type="number" id="data">
+                        </div>
+                        <div class="horarios">
+                            <div class="inputWrapper">
+                                <label for="das">Das</label>
+                                <br>
+                                <input type="number" id="das">
+                            </div>
+                            <div class="inputWrapper">
+                                <label for="ate">Até</label>
+                                <br>
+                                <input type="number" id="ate">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </form>
+
+        </main>
+        <div class="submitArea">
+            <button form="formulario1"> Salvar </button>
+        </div>
+    </div>
+</body>
+</html>
